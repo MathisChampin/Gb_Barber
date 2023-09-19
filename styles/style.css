@@ -1,3 +1,7 @@
+* {
+    overflow-y: hidden;
+}
+
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -103,4 +107,57 @@ a span:nth-child(4) {
     50%, 100% {
         bottom: 100%;
     }
+}
+
+@media(min-width: 768px) and (max-width: 1388px)
+{
+
+    #global
+    
+    {
+    
+                width :100% ;
+    
+                padding :0px ;
+    
+    }
+
+    #contenu
+
+    {
+    
+                width :80% ;
+    
+    }
+    
+    @media(max-width: 767px)
+
+    { 
+    
+     
+    
+        #global
+        
+        {
+        
+                    width :100% ;
+        
+                    padding :0px ;
+        
+        }
+        
+        #contenu
+
+        {
+        
+                    width :100% ;
+        
+        }    
+
+        #canvas {
+            width: 375px;
+            height: 667px;
+        }
+    }  
+
 }

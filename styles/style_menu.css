@@ -2,6 +2,7 @@
 
 * {
     background-color: grey;
+    overflow-y: hidden;
 }
 
 .gif {
@@ -72,7 +73,7 @@ button:hover {
 footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 180px;
+    margin-top: 80px;
 }
 
 footer > a {
@@ -90,4 +91,55 @@ footer > a {
 .logo {
     width: 50px;
     height: 50px;
+}
+
+@media(min-width: 768px) and (max-width: 1920px)
+
+{
+
+ 
+#global
+
+{
+
+            width :100% ;
+
+            padding :0px ;
+
+}
+
+
+#contenu
+
+{
+
+            width :80% ;
+
+}
+
+@media(max-width: 767px)
+
+{ 
+
+
+#global
+
+{
+
+            width :100% ;
+
+            padding :0px ;
+
+}
+ 
+#contenu
+
+{
+
+            width :100% ;
+
+}
+
+}
+
 }
