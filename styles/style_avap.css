@@ -2,6 +2,11 @@
 
 * {
     background-color: grey;
+    overflow-x: hidden;
+}
+
+body {
+    width : 100%;
 }
 
 h1 {
@@ -12,7 +17,7 @@ h1 {
 }
 
 embed {
-    display: flex;
+    display:inline-block;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -44,4 +49,17 @@ button {
 .fleche {
     height: 20px;
     background-color: #A9A9A9;;
+}
+
+@media(min-width: 320px) and (max-width: 540px)
+
+{
+
+video, embed {
+    width: auto;
+    height: 300px;
+    margin-left: 40px;
+    margin-top : 30px;
+}
+
 }

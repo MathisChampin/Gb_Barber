@@ -2,11 +2,12 @@
 
 * {
     background-color: grey;
-    overflow-y: hidden;
+    padding: 0px ;
+    
 }
 
 .gif {
-    height: 150px;
+    height: 100px;
     position: absolute;
     top: 10px
 }
@@ -17,20 +18,21 @@
 }
 
 .tete {
-    height: 150px;
+    height: 100px;
     position: absolute;
     right: 50px;
     top: 10px;
 }
 
-h1 {
+h1.title {
     display: flex;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 45px;
+    font-size: 35px;
     color: white;
     margin-top: 50px;
+    margin-right: 50px;
 }
 
 ul {
@@ -93,53 +95,84 @@ footer > a {
     height: 50px;
 }
 
-@media(min-width: 768px) and (max-width: 1920px)
-
-{
-
- 
-#global
-
-{
-
-            width :100% ;
-
-            padding :0px ;
-
-}
-
-
-#contenu
-
-{
-
-            width :80% ;
-
-}
-
-@media(max-width: 767px)
+@media(min-width: 320px) and (max-width: 768px)
 
 { 
 
+img.gif {
+        height: 80px;
+        position: absolute;
+        top: 10px
+    }    
+
+img.tete {
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}    
+
+
+#global > h1 {
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* h1.title {
+    font-size: 45px;
+} */
 
 #global
 
 {
+       
+    width :100% ;
 
-            width :100% ;
-
-            padding :0px ;
-
-}
- 
-#contenu
-
-{
-
-            width :100% ;
+    padding :0px ; 
+    
 
 }
 
+li > a {
+    padding: 10px;
 }
 
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
 }
+
+footer > a {
+    display: block;
+    font-size: 25px;
+    padding: 1px;
+    font-weight: 1000;
+}
+
+a {
+    display: flex;
+    justify-items: center;
+}
+
+footer > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px white;
+    padding: 30px;
+    font-size: 10px;
+    color: black;
+    font-weight: 500;
+}
+}
+
+
+
+
+
